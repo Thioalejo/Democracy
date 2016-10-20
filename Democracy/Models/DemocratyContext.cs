@@ -17,5 +17,7 @@ namespace Democracy.Models
         }
         //se van agregando las propiedades (Dbset) a medida que se quiere enviar datos a determindaas tablas de base de datos
         public DbSet<State> States { get; set; }
+
+        public System.Data.Entity.DbSet<Democracy.Models.Group> Groups { get; set; }
     }
 }

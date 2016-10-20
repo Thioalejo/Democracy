@@ -6,16 +6,16 @@ using System.Web;
 
 namespace Democracy.Models
 {
-    public class State
+    public class Group
     {
         [Key]
-        public int StateId { get; set; }
+        public int GroupId { get; set; }
 
         //para obligar a llenar el campo
-        [Required(ErrorMessage ="El campo {0} No puede estar Vacio")]
+        [Required(ErrorMessage = "El campo {0} No puede estar Vacio")]
 
         //para definir la longitud del campo
-        [StringLength (50, ErrorMessage ="La longitu maxima debe ser de 50 caracteres y minumo 3", MinimumLength =3)]
+        [StringLength(50, ErrorMessage = "La longitu maxima debe ser de 50 caracteres y minumo 3", MinimumLength = 3)]
         public string Descripcion { get; set; }
     }
 }
